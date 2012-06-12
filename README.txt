@@ -46,4 +46,4 @@ That's almost all. Have fun!
 Copyright notice
 -----------------
 
-This code is release under [aGPL licence](http://www.gnu.org/licenses/agpl-3.0.html).
+This code is release under [aGPL license](http://www.gnu.org/licenses/agpl-3.0.html).
