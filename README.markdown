@@ -43,6 +43,11 @@ A router chooses which view to display.
 
 That's almost all. Have fun!
 
+Deploy on Heroku
+-----------------
+
+Coming soon. See also [this](http://bytesofpi.com/post/20898722298/pushing-your-meteor-project-to-heroku).
+
 Copyright notice
 -----------------
 
