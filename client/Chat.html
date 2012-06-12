@@ -1,0 +1,68 @@
+<head>
+  <title>Chat</title>
+  <!-- Le styles -->
+  <link href="bootstrap.css" rel="stylesheet">
+  <link href="bootstrap-responsive.css" rel="stylesheet">
+</head>
+
+<body>
+ <div id="content">  
+ </div>
+</body>
+
+<template name="strangerPanel">
+  <br/>
+  <div class="span8">
+	<div id="current-chat">
+	</div>
+  </div>
+</template>
+
+<template name="controlPanel">
+ <br/>
+ <div class="tabbable tabs-left">
+	 <ul id="user-list" class="nav nav-tabs">	
+	 </ul>
+	 <div class="tab-content">
+		<div class="tab-pane active"  id="current-chat" >		
+		</div>
+     </div> 
+ </div>
+
+</template>
+
+<template name="users">
+	{{#each users}}
+		{{> user}}
+	{{/each}}	
+</template>
+
+<template name="user">
+	<li class="{{selected}}">
+		<a href="#/admin/1" data-toggle="tab" >
+			{{_id}}
+		</a>
+	</li>
+</template>
+
+
+<template name="messages">
+	<p><strong>You are chatting with {{username}} <span class="label label-success">Online now!</span></strong></p>
+	{{> messageBox}}
+	{{#each messages}}
+	   {{> message}}
+	{{/each}}
+</template>
+
+<template name="messageBox">
+	<p>
+		<input class="input-append span8" type="text" placeHolder="Type your message for Marco and hit enter to send" id="messageBox" />
+	</p>	
+</template>
+
+
+<template name="message">
+	<p>
+		<strong>{{name}}</strong>: {{message}}
+	</p>
+</template>
